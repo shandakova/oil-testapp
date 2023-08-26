@@ -1,15 +1,14 @@
 package services.impl;
 
-import services.FileLoadService
-
-import javax.inject.{Inject, Singleton}
 import com.github.tototoshi.csv._
 import dao.OilPriceDao
 import model.OilPrice
+import services.FileLoadService
 
 import java.io.File
 import java.time.LocalDate
 import java.time.format.{DateTimeFormatter, DateTimeParseException}
+import javax.inject.{Inject, Singleton}
 import scala.collection.mutable.ListBuffer
 import scala.util.Using
 

@@ -1,10 +1,10 @@
 package dao
 
 
+import anorm.SqlParser._
+import anorm._
 import model.{BoundsOilPrice, OilPrice}
 import play.api.db._
-import anorm._
-import anorm.SqlParser._
 
 import java.time.LocalDate
 import javax.inject.{Inject, Singleton}

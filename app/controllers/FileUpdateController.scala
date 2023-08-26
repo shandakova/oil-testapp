@@ -1,12 +1,10 @@
 package controllers
 
 import io.swagger.annotations._
-import model.BoundsOilPrice
 import play.api.libs.json.Json
 import play.api.mvc._
-import services.impl.{FileLoadServiceImpl, OilPriceServiceImpl}
+import services.impl.FileLoadServiceImpl
 
-import java.time.LocalDate
 import javax.inject._
 
 

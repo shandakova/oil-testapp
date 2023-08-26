@@ -1,6 +1,7 @@
 package services
 
 import model.BoundsOilPrice
+
 import java.time.LocalDate
 
 trait OilPriceService {
@@ -8,7 +9,7 @@ trait OilPriceService {
 
   def getAveragePrice(startDate: LocalDate, endDate: LocalDate): Option[BigDecimal]
 
-  def getPriceBound(startDate: LocalDate, endDate: LocalDate):  Option[BoundsOilPrice]
+  def getPriceBound(startDate: LocalDate, endDate: LocalDate): Option[BoundsOilPrice]
 
   def getStatistic(): BigInt
 

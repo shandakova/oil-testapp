@@ -1,7 +1,7 @@
 package services.impl
 
 import dao.OilPriceDao
-import model.{BoundsOilPrice, OilPrice}
+import model.BoundsOilPrice
 import services.OilPriceService
 
 import java.time.LocalDate

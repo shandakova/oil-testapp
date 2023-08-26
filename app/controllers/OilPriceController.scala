@@ -1,6 +1,6 @@
 package controllers
 
-import io.swagger.annotations.{Api, ApiOperation, ApiParam, ApiResponse, ApiResponses}
+import io.swagger.annotations._
 import model.BoundsOilPrice
 import play.api.libs.json.Json
 import play.api.mvc._
@@ -10,7 +10,7 @@ import java.time.LocalDate
 import javax.inject._
 
 
-@Api(value = "OilPriceController", produces = "application/json")
+@Api(value = "OilPriceController")
 @Singleton
 class OilPriceController @Inject()(val controllerComponents: ControllerComponents, private val oilPriceService: OilPriceServiceImpl) extends BaseController {
   implicit val boundsJson = Json.format[BoundsOilPrice]
@@ -37,7 +37,7 @@ class OilPriceController @Inject()(val controllerComponents: ControllerComponent
     }
   }
 
-  def toLocalDate(dateString: String): Option[LocalDate] = {
+  private def toLocalDate(dateString: String): Option[LocalDate] = {
     try {
       Some(LocalDate.parse(dateString.trim))
     } catch {
