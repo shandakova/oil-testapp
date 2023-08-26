@@ -46,4 +46,4 @@ GET /oil-price/statistic - Метод выдает количество запи
 
 POST /oil-price/update - Метод запускает процесс чтения файла и выдает его результат
 
-`http://localhost:9000//oil-price/update`
+`http://localhost:9000/oil-price/update`
